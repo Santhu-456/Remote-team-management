@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-remote-team-dashboard-secret-key-2024'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1',"*"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
