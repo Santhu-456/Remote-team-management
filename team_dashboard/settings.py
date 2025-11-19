@@ -85,6 +85,9 @@ DATABASES = {
         'PASSWORD': env('DB_PASS'),
         'HOST': env('DB_HOST'),      # or your server IP
         'PORT': env('DB_PORT'),
+        'OPTIONS': {
+            'ssl': False
+        }
     }
 }
 
@@ -114,3 +117,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ALLOWED_ORIGINS =["http://0.0.0.0"]
 
 AUTH_USER_MODEL = 'dashboard_app.User'
+
